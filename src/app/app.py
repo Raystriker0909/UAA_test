@@ -16,11 +16,15 @@ class App:
 
     # 1. Verifica si una lista contiene un número primo
     def contiene_numero_primo(lista):
-        """
-        Verifica si hay al menos un número primo en la lista.
-        Retorna True si hay un número primo, de lo contrario, False.
-        """
-        pass
+        def es_primo(num):
+            if num <= 1:
+                return False
+            for i in range(2, int(num ** 0.5) + 1):
+                if num % i == 0:
+                    return False
+            return True
+
+        return any(es_primo(num) for num in lista)
 
     # 2. Cuenta los números pares en un rango dado
     def contar_pares(inicio, fin):
