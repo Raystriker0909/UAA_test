@@ -50,10 +50,10 @@ class App:
 
     # 7. Calcula el factorial de un número sin usar recursión
     def calcular_factorial(numero):
-        """
-        Calcula y retorna el factorial de 'numero' usando un ciclo.
-        """
-        pass
+        factorial = 1
+        for i in range(2, numero + 1):
+            factorial *= i
+        return factorial
 
     # 8. Cuenta la cantidad de vocales en una cadena
     def contar_vocales(cadena):
