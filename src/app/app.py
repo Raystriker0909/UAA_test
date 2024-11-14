@@ -57,18 +57,13 @@ class App:
 
     # 8. Cuenta la cantidad de vocales en una cadena
     def contar_vocales(cadena):
-        """
-        Cuenta y retorna la cantidad de vocales en la cadena.
-        """
-        pass
+        vocales = "aeiouAEIOU"
+        return sum(1 for char in cadena if char in vocales)
 
     # 9. Encuentra el segundo número mayor en una lista
     def segundo_mayor(lista):
-        """
-        Encuentra y retorna el segundo número más grande en la lista.
-        Si no existe, retorna None.
-        """
-        pass
+        unique_sorted_list = sorted(set(lista), reverse=True)
+        return unique_sorted_list[1] if len(unique_sorted_list) > 1 else None
 
     # 10. Calcula la serie de Fibonacci hasta n términos
     def fibonacci(n):
