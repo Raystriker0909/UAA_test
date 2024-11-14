@@ -41,10 +41,7 @@ class App:
 
     # 5. Calcula la suma de los primeros n números impares
     def suma_primeros_impares(n):
-        """
-        Calcula y retorna la suma de los primeros 'n' números impares.
-        """
-        pass
+        return sum([i for i in range(1, 2 * n, 2)])
 
     # 6. Verifica si todos los elementos de una lista son únicos
     def elementos_unicos(lista):
